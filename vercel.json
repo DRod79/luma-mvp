@@ -1,0 +1,28 @@
+```json
+{
+
+"buildCommand": "cd frontend && npm install && npm run build",
+
+"outputDirectory": "frontend/build",
+
+"devCommand": "cd frontend && npm start",
+
+"installCommand": "npm install",
+
+"framework": "create-react-app",
+
+"rewrites": [
+
+{
+
+"source": "/api/(.*)",
+
+"destination": "/api/$1"
+
+},
+
+{
+
+"source": "/(.*)",
+
+"destination": "/index.html"
